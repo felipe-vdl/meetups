@@ -1,0 +1,22 @@
+.coverImage {
+  width: 100%;
+}
+
+.details {
+  text-align: center;
+  overflow: hidden;
+}
+.details img {
+  border-radius: 6px;
+  transition: all .5s ease;
+}
+
+.info {
+  padding: 0 1rem 0.5rem;
+}
+.info h1 {
+  margin: 1rem 0;
+}
+.info address {
+  color: rgb(80, 80, 80);
+}
