@@ -2,13 +2,14 @@ import React from 'react';
 import styles from './MeetupDetail.module.css';
 import Card from '../ui/Card';
 import LoadingSpinner from '../ui/LoadingSpinner';
+import Image from 'next/image';
 
 export default function MeetupDetail({meetup}) {
   return (
     <Card className={styles.details}>
       { meetup ? ( 
           <>
-            <img
+            <Image
               className={styles.coverImage}
               src={meetup.image}
               alt={meetup.title}
