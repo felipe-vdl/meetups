@@ -9,12 +9,12 @@ function MeetupItem(props) {
   const showDetailsHandler = evt => {
     router.push(`/meetups/${props.id}`);
   }
-  
+
   return (
     <li className={classes.item}>
       <Card>
         <div className={classes.image}>
-          <Image src={props.image} alt={props.title} />
+          <Image loader={() => props.image} src={props.image} alt={props.title} layout="fill" />
         </div>
         <div className={classes.content}>
           <h3>{props.title}</h3>
